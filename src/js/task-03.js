@@ -31,6 +31,6 @@ const createGallery = ({ url, alt }) => {
   galleryEl.insertAdjacentHTML('beforeend',
     `<li><img src="${url}" alt="${alt}"  class="gallery-img"></li>  `);
 }
-const element = images.map(createGallery);
+const element = images.map(createGallery).join(" ");
 console.log(createGallery);
 console.log(galleryEl);
